@@ -35,11 +35,13 @@ return [
     |
     */
 
-    'guards' => [
-    'web' => [
-        'driver' => 'session',
+   'guards' => [
+    'api' => [
+        'driver' => 'jwt',
         'provider' => 'users',
     ],
+],
+
       'api' => [
             'driver' => 'jwt',  // Changed from 'token' to 'jwt'
             'provider' => 'users',
